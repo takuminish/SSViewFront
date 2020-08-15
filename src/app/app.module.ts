@@ -20,11 +20,13 @@ import {MatButtonToggleModule} from '@angular/material/button-toggle';
 import {MatChipsModule} from '@angular/material/chips';
 
 import { SSListPageComponent } from './components/SSListPage/SSListPage/SSListPage.component';
+import { HeaderComponent } from './components/share/Header/Header.component';
 
 
 @NgModule({
   declarations: [
     AppComponent,
+    HeaderComponent,
     SSListPageComponent,
   ],
   imports: [
