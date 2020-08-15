@@ -1,4 +1,4 @@
-.example-container {
+mat-sidenav-container {
     top: 0;
     bottom: 0;
     left: 0;
@@ -11,3 +11,14 @@
   mat-sidenav {
     width: 200px;
   }
+
+  .mat-button-toggle-checked {
+    background-color: skyblue;
+    color: white;
+  }
+
+  .mat-chip {
+      background-color: black;
+      color: white;
+  }
+

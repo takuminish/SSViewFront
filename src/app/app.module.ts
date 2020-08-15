@@ -14,6 +14,10 @@ import {MatGridListModule} from '@angular/material/grid-list';
 import {MatCardModule} from '@angular/material/card';
 import {MatDividerModule} from '@angular/material/divider';
 import {MatListModule} from '@angular/material/list';
+import { FlexLayoutModule } from '@angular/flex-layout';
+import {MatInputModule} from '@angular/material/input';
+import {MatButtonToggleModule} from '@angular/material/button-toggle';
+import {MatChipsModule} from '@angular/material/chips';
 
 import { SSListPageComponent } from './components/SSListPage/SSListPage/SSListPage.component';
 
@@ -37,6 +41,11 @@ import { SSListPageComponent } from './components/SSListPage/SSListPage/SSListPa
     MatCardModule,
     MatDividerModule,
     MatListModule,
+    FlexLayoutModule,
+    MatInputModule,
+    MatButtonToggleModule,
+    MatChipsModule,
+    
   ],
   providers: [],
   bootstrap: [AppComponent]
