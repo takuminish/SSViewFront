@@ -24,6 +24,7 @@ import { HeaderComponent } from './components/share/Header/Header.component';
 import { SideMenuComponent } from './components/share/SideMenu/SideMenu.component';
 import { FooterComponent } from './components/share/Footer/Footer.component';
 import { SSCardComponent } from './components/SSListPage/SSCard/SSCard.component';
+import { SSTagComponent } from './components/SSListPage/SSTag/SSTag.component';
 
 
 @NgModule({
@@ -34,6 +35,7 @@ import { SSCardComponent } from './components/SSListPage/SSCard/SSCard.component
     FooterComponent,
     SSListPageComponent,
     SSCardComponent,
+    SSTagComponent,
   ],
   imports: [
     BrowserModule,
