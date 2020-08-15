@@ -6,31 +6,15 @@
     <div class="sscard-content" fxFlex="grow">
       <div fxLayout="column" fxFlexFill>
         <div class="sscard-title" fxFlex="40%">
-          <h1>SSタイトル</h1>
+          <a routerLink="/ss/{{ss.id}}"><h1>{{ ss.title }}</h1></a>
         </div>
         <div class="sscard-tags" fxFlex="grow">
           <mat-chip-list aria-label="Fish selection">
-            <app-SSTag tagText="test1"></app-SSTag>
-            <app-SSTag tagText="test1"></app-SSTag>
-            <app-SSTag tagText="test1"></app-SSTag>
-            <app-SSTag tagText="test1"></app-SSTag>
-            <app-SSTag tagText="test1"></app-SSTag>
-            <app-SSTag tagText="test1"></app-SSTag>
-            <app-SSTag tagText="test1"></app-SSTag>
-            <app-SSTag tagText="test1"></app-SSTag>
-            <app-SSTag tagText="test1"></app-SSTag>
+            <app-SSTag *ngFor="let tag of ss.tags" tagText={{tag}}></app-SSTag>
           </mat-chip-list>
         </div>
         <div class="sscard-text" fxFlex="grow">
-          これはテスト用の本文です。<br>
-          これはテスト用の本文です。<br>
-          これはテスト用の本文です。<br>
-          これはテスト用の本文です。<br>
-          これはテスト用の本文です。<br>
-          これはテスト用の本文です。<br>
-          これはテスト用の本文です。<br>
-          これはテスト用の本文です。<br>
-          これはテスト用の本文です。<br>
+          {{ ss.content }}
         </div>
       </div>
     </div>

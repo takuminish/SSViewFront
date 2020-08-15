@@ -3,17 +3,17 @@
     <div class="left" fxFlex="grow">
       <div fxLayout="column" fxFlexFill>
         <div class="left1" fxFlex="10%" style="text-align: center; margin-bottom: 20px">
-          <app-SSViewSelecrButtonGroup></app-SSViewSelecrButtonGroup>
+          <app-SSViewSelectButtonGroup></app-SSViewSelectButtonGroup>
         </div>
         <div class="left2" fxFlex="grow">  
           <div style="margin: auto; margin-bottom: 20px; width: 80%;">          
-            <app-SSCard></app-SSCard>
+            <app-SSCard [ss]=ss></app-SSCard>
           </div>
           <div style="margin: auto; margin-bottom: 20px; width: 80%;">          
-            <app-SSCard></app-SSCard>
+            <app-SSCard [ss]=ss></app-SSCard>
           </div>
           <div style="margin: auto; margin-bottom: 20px; width: 80%;">          
-            <app-SSCard></app-SSCard>
+            <app-SSCard [ss]=ss></app-SSCard>
           </div>
           <div style="text-align: center; margin-bottom: 20px;">
             <app-PaginationButtonGroup></app-PaginationButtonGroup>

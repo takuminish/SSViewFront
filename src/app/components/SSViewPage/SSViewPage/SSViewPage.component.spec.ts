@@ -3,21 +3,21 @@ import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 import { By } from '@angular/platform-browser';
 import { DebugElement } from '@angular/core';
 
-import { SSViewSelecrButtonGroupComponent } from './SSViewSelecrButtonGroup.component';
+import { SSViewPageComponent } from './SSViewPage.component';
 
-describe('SSViewSelecrButtonGroupComponent', () => {
-  let component: SSViewSelecrButtonGroupComponent;
-  let fixture: ComponentFixture<SSViewSelecrButtonGroupComponent>;
+describe('SSViewPageComponent', () => {
+  let component: SSViewPageComponent;
+  let fixture: ComponentFixture<SSViewPageComponent>;
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ SSViewSelecrButtonGroupComponent ]
+      declarations: [ SSViewPageComponent ]
     })
     .compileComponents();
   }));
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(SSViewSelecrButtonGroupComponent);
+    fixture = TestBed.createComponent(SSViewPageComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });
