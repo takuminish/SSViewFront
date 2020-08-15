@@ -22,6 +22,7 @@ import {MatChipsModule} from '@angular/material/chips';
 import { SSListPageComponent } from './components/SSListPage/SSListPage/SSListPage.component';
 import { HeaderComponent } from './components/share/Header/Header.component';
 import { SideMenuComponent } from './components/share/SideMenu/SideMenu.component';
+import { FooterComponent } from './components/share/Footer/Footer.component';
 
 
 @NgModule({
@@ -29,6 +30,7 @@ import { SideMenuComponent } from './components/share/SideMenu/SideMenu.componen
     AppComponent,
     HeaderComponent,
     SideMenuComponent,
+    FooterComponent,
     SSListPageComponent,
   ],
   imports: [
