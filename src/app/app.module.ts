@@ -25,6 +25,7 @@ import { SideMenuComponent } from './components/share/SideMenu/SideMenu.componen
 import { FooterComponent } from './components/share/Footer/Footer.component';
 import { SSCardComponent } from './components/SSListPage/SSCard/SSCard.component';
 import { SSTagComponent } from './components/SSListPage/SSTag/SSTag.component';
+import { SSViewSelecrButtonGroupComponent } from './components/SSListPage/SSViewSelecrButtonGroup/SSViewSelecrButtonGroup.component';
 
 
 @NgModule({
@@ -36,6 +37,7 @@ import { SSTagComponent } from './components/SSListPage/SSTag/SSTag.component';
     SSListPageComponent,
     SSCardComponent,
     SSTagComponent,
+    SSViewSelecrButtonGroupComponent,
   ],
   imports: [
     BrowserModule,

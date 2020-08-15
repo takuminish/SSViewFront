@@ -3,17 +3,18 @@
     <div class="left" fxFlex="grow">
       <div fxLayout="column" fxFlexFill>
         <div class="left1" fxFlex="10%" style="text-align: center; margin-bottom: 20px">
-          <mat-button-toggle-group aria-label="Font Style">
-            <mat-button-toggle >新着</mat-button-toggle>
-            <mat-button-toggle >週間ランキング</mat-button-toggle>
-            <mat-button-toggle >月間ランキング</mat-button-toggle>
-            <mat-button-toggle >累計ランキング</mat-button-toggle>
-          </mat-button-toggle-group>
+          <app-SSViewSelecrButtonGroup></app-SSViewSelecrButtonGroup>
         </div>
-        <div class="left2" fxFlex="grow">            
-          <app-SSCard></app-SSCard>
-          <app-SSCard></app-SSCard>
-          <app-SSCard></app-SSCard>
+        <div class="left2" fxFlex="grow">  
+          <div style="margin: auto; margin-bottom: 20px; width: 80%;">          
+            <app-SSCard></app-SSCard>
+          </div>
+          <div style="margin: auto; margin-bottom: 20px; width: 80%;">          
+            <app-SSCard></app-SSCard>
+          </div>
+          <div style="margin: auto; margin-bottom: 20px; width: 80%;">          
+            <app-SSCard></app-SSCard>
+          </div>
           <div style="text-align: center; margin-bottom: 20px;">
           <mat-button-toggle-group aria-label="Font Style">
             <mat-button-toggle><<</mat-button-toggle>
