@@ -21,12 +21,14 @@ import {MatChipsModule} from '@angular/material/chips';
 
 import { SSListPageComponent } from './components/SSListPage/SSListPage/SSListPage.component';
 import { HeaderComponent } from './components/share/Header/Header.component';
+import { SideMenuComponent } from './components/share/SideMenu/SideMenu.component';
 
 
 @NgModule({
   declarations: [
     AppComponent,
     HeaderComponent,
+    SideMenuComponent,
     SSListPageComponent,
   ],
   imports: [

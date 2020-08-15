@@ -1,0 +1,34 @@
+<mat-accordion multi>
+  <mat-expansion-panel>
+    <mat-expansion-panel-header>
+      <mat-panel-title>
+        新着10
+      </mat-panel-title>
+    </mat-expansion-panel-header>
+      <button mat-button style="width: 100%" *ngFor="let newSS of newSSList">{{ newSS }}</button>
+  </mat-expansion-panel>
+  <mat-expansion-panel>
+    <mat-expansion-panel-header>
+      <mat-panel-title>
+        週間ランキング
+      </mat-panel-title>
+    </mat-expansion-panel-header>
+      <button mat-button style="width: 100%" *ngFor="let weekRankingSS of weekRankingSSList">{{ weekRankingSS }}</button>
+  </mat-expansion-panel>
+  <mat-expansion-panel>
+    <mat-expansion-panel-header>
+      <mat-panel-title>
+        月間ランキング
+      </mat-panel-title>
+    </mat-expansion-panel-header>
+      <button mat-button style="width: 100%" *ngFor="let monthRankingSS of monthRankingSSList">{{ monthRankingSS }}</button>
+  </mat-expansion-panel>
+  <mat-expansion-panel>
+    <mat-expansion-panel-header>
+      <mat-panel-title>
+        累計ランキング
+      </mat-panel-title>
+    </mat-expansion-panel-header>
+      <button mat-button style="width: 100%" *ngFor="let allRankingSS of allRankingSSList">{{ allRankingSS }}</button>
+  </mat-expansion-panel>
+</mat-accordion>
