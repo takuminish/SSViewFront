@@ -26,6 +26,8 @@ import { FooterComponent } from './components/share/Footer/Footer.component';
 import { SSCardComponent } from './components/SSListPage/SSCard/SSCard.component';
 import { SSTagComponent } from './components/SSListPage/SSTag/SSTag.component';
 import { SSViewSelecrButtonGroupComponent } from './components/SSListPage/SSViewSelecrButtonGroup/SSViewSelecrButtonGroup.component';
+import { SSSearchFormComponent } from './components/SSListPage/SSSearchForm/SSSearchForm.component';
+import { PaginationButtonGroupComponent } from './components/SSListPage/PaginationButtonGroup/PaginationButtonGroup.component';
 
 
 @NgModule({
@@ -38,6 +40,8 @@ import { SSViewSelecrButtonGroupComponent } from './components/SSListPage/SSView
     SSCardComponent,
     SSTagComponent,
     SSViewSelecrButtonGroupComponent,
+    SSSearchFormComponent,
+    PaginationButtonGroupComponent,
   ],
   imports: [
     BrowserModule,

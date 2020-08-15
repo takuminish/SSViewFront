@@ -16,40 +16,17 @@
             <app-SSCard></app-SSCard>
           </div>
           <div style="text-align: center; margin-bottom: 20px;">
-          <mat-button-toggle-group aria-label="Font Style">
-            <mat-button-toggle><<</mat-button-toggle>
-            <mat-button-toggle><</mat-button-toggle>
-            <mat-button-toggle>1</mat-button-toggle>
-            <mat-button-toggle>2</mat-button-toggle>
-            <mat-button-toggle>3</mat-button-toggle>
-            <mat-button-toggle>4</mat-button-toggle>
-            <mat-button-toggle>5</mat-button-toggle>
-            <mat-button-toggle>></mat-button-toggle>
-            <mat-button-toggle>>></mat-button-toggle>
-          </mat-button-toggle-group>
-        </div>
+            <app-PaginationButtonGroup></app-PaginationButtonGroup>
+          </div>
         </div>
       </div>
     </div>
     <div class="right" fxFlex="30%">
       <div fxLayout="column" fxFlexFill>
         <div class="right2" fxFlex="grow" style="position: fixed;">
-          <mat-card style="width:80%; margin:auto;">
-            <mat-card-header>
-              <mat-card-title>SS検索</mat-card-title>
-              <mat-card-subtitle>SSのタイトルまたはタグで検索できます。</mat-card-subtitle>
-            </mat-card-header>
-            <mat-card-content>
-              <mat-form-field class="example-full-width">
-                <mat-label>タイトル</mat-label>
-                <input matInput placeholder="SSのタイトル" value="Sushi">
-              </mat-form-field>
-              <mat-form-field class="example-full-width">
-                <mat-label>タグ</mat-label>
-                <input matInput placeholder="SSに含まれるタグ名" value="Sushi">
-              </mat-form-field>
-            </mat-card-content>
-          </mat-card>
+          <div style="width:80%; margin:auto;">
+            <app-SSSearchForm></app-SSSearchForm>
+          </div>
         </div>
       </div>
     </div>
