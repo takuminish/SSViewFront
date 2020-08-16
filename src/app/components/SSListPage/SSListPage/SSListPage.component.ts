@@ -5,6 +5,7 @@ import { WeekRankingSSListService } from 'src/app/services/WeekRankingSSListServ
 import { MonthRankingSSListService } from 'src/app/services/MonthRankingSSListService/MonthRankingSSList.service';
 import { AllRankingSSListService } from 'src/app/services/AllRankingSSListService/AllRankingSSList.service';
 import { Observable } from 'rxjs';
+import { share } from 'rxjs/operators';
 
 @Component({
   selector: 'app-SSListPage',
@@ -21,16 +22,17 @@ export class SSListPageComponent implements OnInit {
     private allRankingSSListService: AllRankingSSListService) { }
 
   ngOnInit() {
-    this.ssList$ = this.newSSListService.fetchNewSSListAll();
+    this.ssList$ = this.newSSListService.fetchNewSSListAll().pipe(share());
+;
   }
 
   changeSSSelect(value:any) {
     console.log(value);
     switch(value) {
-      case 'new': this.ssList$ = this.newSSListService.fetchNewSSListAll(); break;
-      case 'week': this.ssList$ = this.weekRankingSSListService.fetchWeekRankingSSListAll(); break;
-      case 'month': this.ssList$ = this.monthRankingSSListService.fetchMonthRankingSSListAll(); break;
-      case 'all': this.ssList$ = this.allRankingSSListService.fetchAllRankingSSListAll(); break;
+      case 'new': this.ssList$ = this.newSSListService.fetchNewSSListAll().pipe(share());; break;
+      case 'week': this.ssList$ = this.weekRankingSSListService.fetchWeekRankingSSListAll().pipe(share());; break;
+      case 'month': this.ssList$ = this.monthRankingSSListService.fetchMonthRankingSSListAll().pipe(share());; break;
+      case 'all': this.ssList$ = this.allRankingSSListService.fetchAllRankingSSListAll().pipe(share());; break;
     }
 
   }

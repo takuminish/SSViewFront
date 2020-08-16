@@ -37,7 +37,6 @@ import { PaginationButtonGroupComponent } from './components/SSListPage/Paginati
 import { SSViewPageComponent } from './components/SSViewPage/SSViewPage/SSViewPage.component';
 import { TagListPageComponent } from './components/TagListPage/TagListPage/TagListPage.component';
 
-
 @NgModule({
   declarations: [
     AppComponent,

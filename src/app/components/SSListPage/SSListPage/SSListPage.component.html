@@ -5,37 +5,11 @@
         <div class="left1" fxFlex="grow" style="text-align: center; margin-bottom: 20px;">
           <app-SSViewSelectButtonGroup (changeSSSelect)="changeSSSelect($event)"></app-SSViewSelectButtonGroup>
         </div>
-        <div class="left2" fxFlex="grow">  
-          <div>    
-            <ng-container *ngIf="ssList$ | async as ssList; else tempcard">
-              <div *ngFor="let ss of ssList" style="margin: auto; margin-bottom: 20px; width: 80%;">
-                <app-SSCard [ss]=ss></app-SSCard>
-              </div>
-            </ng-container>
-            <ng-template #tempcard>
-              <mat-card class="sscard">
-                <div fxLayout="row" fxFlexFill>
-                  <div class="sscard-img" fxFlex="20%">
-                    <img src="http://via.placeholder.com/50x50" width="100%"/>
-                  </div>
-                  <div class="sscard-content" fxFlex="grow">
-                    <div fxLayout="column" fxFlexFill>
-                      <div class="sscard-title" fxFlex="40%">
-                        <mat-progress-bar mode="indeterminate"></mat-progress-bar>
-                      </div>
-                      <div class="sscard-tags" fxFlex="grow">
-                        <mat-progress-bar mode="indeterminate"></mat-progress-bar>
-                      </div>
-                      <div class="sscard-text" fxFlex="grow">
-                        <mat-progress-bar mode="indeterminate"></mat-progress-bar>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </mat-card>
-            </ng-template>
+        <div class="left2" fxFlex="grow">    
+          <div *ngFor="let ss of ssList$ | async " style="margin: auto; margin-bottom: 20px; width: 80%;">
+            <app-SSCard [ss]=ss></app-SSCard>
           </div>
-          <div style="text-align: center; margin-bottom: 20px;">
+          <div style="text-align: center; margin-bottom: 20px;" *ngIf="(ssList$ | async)?.length > 15">
             <app-PaginationButtonGroup></app-PaginationButtonGroup>
           </div>
         </div>
