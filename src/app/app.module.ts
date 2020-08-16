@@ -22,6 +22,8 @@ import { RouterModule } from '@angular/router';
 import {MatAutocompleteModule} from '@angular/material/autocomplete';
 import { ReactiveFormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
+import { ScrollingModule } from '@angular/cdk/scrolling';
+import {MatProgressBarModule} from '@angular/material/progress-bar';
 
 import { SSListPageComponent } from './components/SSListPage/SSListPage/SSListPage.component';
 import { HeaderComponent } from './components/share/Header/Header.component';
@@ -73,6 +75,8 @@ import { TagListPageComponent } from './components/TagListPage/TagListPage/TagLi
     RouterModule,
     ReactiveFormsModule,
     HttpClientModule,
+    ScrollingModule,
+    MatProgressBarModule,
     
   ],
   providers: [],
