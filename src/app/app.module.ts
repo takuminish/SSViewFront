@@ -19,6 +19,8 @@ import {MatInputModule} from '@angular/material/input';
 import {MatButtonToggleModule} from '@angular/material/button-toggle';
 import {MatChipsModule} from '@angular/material/chips';
 import { RouterModule } from '@angular/router';
+import {MatAutocompleteModule} from '@angular/material/autocomplete';
+import { ReactiveFormsModule } from '@angular/forms';
 
 import { SSListPageComponent } from './components/SSListPage/SSListPage/SSListPage.component';
 import { HeaderComponent } from './components/share/Header/Header.component';
@@ -30,6 +32,7 @@ import { SSViewSelectButtonGroupComponent } from './components/SSListPage/SSView
 import { SSSearchFormComponent } from './components/SSListPage/SSSearchForm/SSSearchForm.component';
 import { PaginationButtonGroupComponent } from './components/SSListPage/PaginationButtonGroup/PaginationButtonGroup.component';
 import { SSViewPageComponent } from './components/SSViewPage/SSViewPage/SSViewPage.component';
+import { TagListPageComponent } from './components/TagListPage/TagListPage/TagListPage.component';
 
 
 @NgModule({
@@ -44,7 +47,8 @@ import { SSViewPageComponent } from './components/SSViewPage/SSViewPage/SSViewPa
     SSViewSelectButtonGroupComponent,
     SSSearchFormComponent,
     PaginationButtonGroupComponent,
-    SSViewPageComponent
+    SSViewPageComponent,
+    TagListPageComponent,
   ],
   imports: [
     BrowserModule,
@@ -64,7 +68,9 @@ import { SSViewPageComponent } from './components/SSViewPage/SSViewPage/SSViewPa
     MatInputModule,
     MatButtonToggleModule,
     MatChipsModule,
+    MatAutocompleteModule,
     RouterModule,
+    ReactiveFormsModule,
     
   ],
   providers: [],
