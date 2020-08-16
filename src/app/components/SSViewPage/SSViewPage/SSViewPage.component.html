@@ -1,3 +1,28 @@
-<p>
-  SSViewPage works!
-</p>
+<div style="margin:auto; width: 80%; margin-top: 20px; margin-bottom: 20px;">
+<mat-card class="sscard">
+  <div fxLayout="column" fxFlexFill>
+    <div class="sscard-title" fxFlex="5%">
+      <h1>{{ ss.title }}</h1>
+    </div>
+    <div class="sscard-middle" fxFlex="10%" style="margin-bottom: 50px;">
+      <div fxLayout="row">
+        <div class="sscard-img" fxFlex="20%" style="margin-right: 20px;">
+          <div>
+            <img src="http://via.placeholder.com/50x50" width="100%"/>
+          </div>
+        </div>
+        <div>
+          <div class="sscard-tag" fxFlex="grow">
+            <mat-chip-list aria-label="Fish selection">
+              <app-SSTag *ngFor="let tag of ss.tags" tagText={{tag}}></app-SSTag>
+            </mat-chip-list>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="sscard-content" fxFlex="grow">
+      {{ ss.content }}
+    </div>
+  </div>
+</mat-card>
+</div>
