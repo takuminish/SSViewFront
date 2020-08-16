@@ -1,4 +1,10 @@
 import { Component, OnInit } from '@angular/core';
+import { Observable } from 'rxjs';
+import { SS } from 'src/app/models/SS.model';
+import { NewSSListService } from 'src/app/services/NewSSListService/NewSSList.service';
+import { WeekRankingSSListService } from 'src/app/services/WeekRankingSSListService/WeekRankingSSList.service';
+import { MonthRankingSSListService } from 'src/app/services/MonthRankingSSListService/MonthRankingSSList.service';
+import { AllRankingSSListService } from 'src/app/services/AllRankingSSListService/AllRankingSSList.service';
 
 @Component({
   selector: 'app-SideMenu',
@@ -7,15 +13,21 @@ import { Component, OnInit } from '@angular/core';
 })
 export class SideMenuComponent implements OnInit {
 
-  public newSSList:string[] = ['新着SS01', '新着SS02', '新着SS03', '新着SS04', '新着SS05', '新着SS06', '新着SS07', '新着SS08', '新着SS09', '新着SS10',];
-  public weekRankingSSList:string[] = ['週間SS01', '週間SS02', '週間SS03', '週間SS04', '週間SS05', '週間SS06', '週間SS07', '週間SS08', '週間SS09', '月間SS10',];
-  public monthRankingSSList:string[] = ['月間SS01', '月間SS02', '月間SS03', '月間SS04', '月間SS05', '月間SS06', '月間SS07', '月間SS08', '月間SS09', '月間SS10',];
-  public allRankingSSList:string[] = ['累計SS01', '累計SS02', '累計SS03', '累計SS04', '累計SS05', '累計SS06', '累計SS07', '累計SS08', '累計SS09', '累計SS10',];
+  public newSSList$:Observable<SS[]>;
+  public weekRankingSSList$:Observable<SS[]>;
+  public monthRankingSSList$:Observable<SS[]>;
+  public allRankingSSList$:Observable<SS[]>;
 
-
-  constructor() { }
+  constructor(private newSSListService: NewSSListService,
+              private weekRankingSSListService: WeekRankingSSListService,
+              private monthRankingSSListService: MonthRankingSSListService,
+              private allRankingSSListService: AllRankingSSListService) { }
 
   ngOnInit() {
+    this.newSSList$ = this.newSSListService.fetchNewSSList();
+    this.weekRankingSSList$ = this.weekRankingSSListService.fetchWeekRankingSSList();
+    this.monthRankingSSList$ = this.monthRankingSSListService.fetchMonthRankingSSList();
+    this.allRankingSSList$ = this.allRankingSSListService.fetchAllRankingSSList();
   }
 
 }

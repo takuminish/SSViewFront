@@ -21,6 +21,7 @@ import {MatChipsModule} from '@angular/material/chips';
 import { RouterModule } from '@angular/router';
 import {MatAutocompleteModule} from '@angular/material/autocomplete';
 import { ReactiveFormsModule } from '@angular/forms';
+import { HttpClientModule } from '@angular/common/http';
 
 import { SSListPageComponent } from './components/SSListPage/SSListPage/SSListPage.component';
 import { HeaderComponent } from './components/share/Header/Header.component';
@@ -71,6 +72,7 @@ import { TagListPageComponent } from './components/TagListPage/TagListPage/TagLi
     MatAutocompleteModule,
     RouterModule,
     ReactiveFormsModule,
+    HttpClientModule,
     
   ],
   providers: [],

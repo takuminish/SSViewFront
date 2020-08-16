@@ -5,7 +5,7 @@
         新着10
       </mat-panel-title>
     </mat-expansion-panel-header>
-      <button mat-button style="width: 100%" *ngFor="let newSS of newSSList">{{ newSS }}</button>
+      <button mat-button style="width: 100%" *ngFor="let newSS of newSSList$ | async">{{ newSS.title }}</button>
   </mat-expansion-panel>
   <mat-expansion-panel>
     <mat-expansion-panel-header>
@@ -13,7 +13,7 @@
         週間ランキング
       </mat-panel-title>
     </mat-expansion-panel-header>
-      <button mat-button style="width: 100%" *ngFor="let weekRankingSS of weekRankingSSList">{{ weekRankingSS }}</button>
+      <button mat-button style="width: 100%" *ngFor="let weekRankingSS of weekRankingSSList$ | async">{{ weekRankingSS.title }}</button>
   </mat-expansion-panel>
   <mat-expansion-panel>
     <mat-expansion-panel-header>
@@ -21,7 +21,7 @@
         月間ランキング
       </mat-panel-title>
     </mat-expansion-panel-header>
-      <button mat-button style="width: 100%" *ngFor="let monthRankingSS of monthRankingSSList">{{ monthRankingSS }}</button>
+      <button mat-button style="width: 100%" *ngFor="let monthRankingSS of monthRankingSSList$ | async">{{ monthRankingSS.title }}</button>
   </mat-expansion-panel>
   <mat-expansion-panel>
     <mat-expansion-panel-header>
@@ -29,6 +29,6 @@
         累計ランキング
       </mat-panel-title>
     </mat-expansion-panel-header>
-      <button mat-button style="width: 100%" *ngFor="let allRankingSS of allRankingSSList">{{ allRankingSS }}</button>
+      <button mat-button style="width: 100%" *ngFor="let allRankingSS of allRankingSSList$ | async">{{ allRankingSS.title }}</button>
   </mat-expansion-panel>
 </mat-accordion>

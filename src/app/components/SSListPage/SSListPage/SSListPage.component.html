@@ -3,16 +3,10 @@
     <div class="left" fxFlex="grow">
       <div fxLayout="column" fxFlexFill>
         <div class="left1" fxFlex="10%" style="text-align: center; margin-bottom: 20px">
-          <app-SSViewSelectButtonGroup></app-SSViewSelectButtonGroup>
+          <app-SSViewSelectButtonGroup (changeSSSelect)="changeSSSelect($event)"></app-SSViewSelectButtonGroup>
         </div>
         <div class="left2" fxFlex="grow">  
-          <div style="margin: auto; margin-bottom: 20px; width: 80%;">          
-            <app-SSCard [ss]=ss></app-SSCard>
-          </div>
-          <div style="margin: auto; margin-bottom: 20px; width: 80%;">          
-            <app-SSCard [ss]=ss></app-SSCard>
-          </div>
-          <div style="margin: auto; margin-bottom: 20px; width: 80%;">          
+          <div style="margin: auto; margin-bottom: 20px; width: 80%;" *ngFor="let ss of ssList$ | async">          
             <app-SSCard [ss]=ss></app-SSCard>
           </div>
           <div style="text-align: center; margin-bottom: 20px;">

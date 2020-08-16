@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Output, EventEmitter } from '@angular/core';
 
 @Component({
   selector: 'app-SSViewSelectButtonGroup',
@@ -7,9 +7,18 @@ import { Component, OnInit } from '@angular/core';
 })
 export class SSViewSelectButtonGroupComponent implements OnInit {
 
+  @Output() changeSSSelect:EventEmitter<string> = new EventEmitter();
+
   constructor() { }
 
   ngOnInit() {
   }
+
+  selectSS(value:string) {
+    console.log(value);
+    this.changeSSSelect.emit(value);
+  }
+
+
 
 }
