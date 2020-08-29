@@ -11,9 +11,8 @@ describe('SSTagComponent', () => {
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ SSTagComponent ]
-    })
-    .compileComponents();
+      declarations: [SSTagComponent],
+    }).compileComponents();
   }));
 
   beforeEach(() => {

@@ -11,9 +11,8 @@ describe('PaginationButtonGroupComponent', () => {
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ PaginationButtonGroupComponent ]
-    })
-    .compileComponents();
+      declarations: [PaginationButtonGroupComponent],
+    }).compileComponents();
   }));
 
   beforeEach(() => {

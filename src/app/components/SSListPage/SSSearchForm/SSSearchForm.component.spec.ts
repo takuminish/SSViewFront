@@ -11,9 +11,8 @@ describe('SSSearchFormComponent', () => {
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ SSSearchFormComponent ]
-    })
-    .compileComponents();
+      declarations: [SSSearchFormComponent],
+    }).compileComponents();
   }));
 
   beforeEach(() => {

@@ -11,9 +11,8 @@ describe('SSViewPageComponent', () => {
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ SSViewPageComponent ]
-    })
-    .compileComponents();
+      declarations: [SSViewPageComponent],
+    }).compileComponents();
   }));
 
   beforeEach(() => {

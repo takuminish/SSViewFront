@@ -4,15 +4,12 @@ import { SS } from 'src/app/models/SS.model';
 @Component({
   selector: 'app-SSCard',
   templateUrl: './SSCard.component.html',
-  styleUrls: ['./SSCard.component.scss']
+  styleUrls: ['./SSCard.component.scss'],
 })
 export class SSCardComponent implements OnInit {
+  @Input() ss: SS;
 
-  @Input() ss:SS;
+  constructor() {}
 
-  constructor() { }
-
-  ngOnInit() {
-  }
-
+  ngOnInit() {}
 }

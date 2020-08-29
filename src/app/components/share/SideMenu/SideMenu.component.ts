@@ -9,19 +9,20 @@ import { AllRankingSSListService } from 'src/app/services/AllRankingSSListServic
 @Component({
   selector: 'app-SideMenu',
   templateUrl: './SideMenu.component.html',
-  styleUrls: ['./SideMenu.component.scss']
+  styleUrls: ['./SideMenu.component.scss'],
 })
 export class SideMenuComponent implements OnInit {
+  public newSSList$: Observable<SS[]>;
+  public weekRankingSSList$: Observable<SS[]>;
+  public monthRankingSSList$: Observable<SS[]>;
+  public allRankingSSList$: Observable<SS[]>;
 
-  public newSSList$:Observable<SS[]>;
-  public weekRankingSSList$:Observable<SS[]>;
-  public monthRankingSSList$:Observable<SS[]>;
-  public allRankingSSList$:Observable<SS[]>;
-
-  constructor(private newSSListService: NewSSListService,
-              private weekRankingSSListService: WeekRankingSSListService,
-              private monthRankingSSListService: MonthRankingSSListService,
-              private allRankingSSListService: AllRankingSSListService) { }
+  constructor(
+    private newSSListService: NewSSListService,
+    private weekRankingSSListService: WeekRankingSSListService,
+    private monthRankingSSListService: MonthRankingSSListService,
+    private allRankingSSListService: AllRankingSSListService
+  ) {}
 
   ngOnInit() {
     this.newSSList$ = this.newSSListService.fetchNewSSList();
@@ -29,5 +30,4 @@ export class SideMenuComponent implements OnInit {
     this.monthRankingSSList$ = this.monthRankingSSListService.fetchMonthRankingSSList();
     this.allRankingSSList$ = this.allRankingSSListService.fetchAllRankingSSList();
   }
-
 }

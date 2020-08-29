@@ -4,17 +4,16 @@ import { SS } from 'src/app/models/SS.model';
 import { HttpClient } from '@angular/common/http';
 
 @Injectable({
-  providedIn: 'root'
+  providedIn: 'root',
 })
 export class WeekRankingSSListService {
+  constructor(private http: HttpClient) {}
 
-  constructor(private http: HttpClient) { }
-
-  fetchWeekRankingSSList():Observable<SS[]> {
-    return this.http.get<SS[]>("http://localhost:3000/weekRankingSSList");
+  fetchWeekRankingSSList(): Observable<SS[]> {
+    return this.http.get<SS[]>('http://localhost:3000/weekRankingSSList');
   }
 
-  fetchWeekRankingSSListAll():Observable<SS[]> {
-    return this.http.get<SS[]>("http://localhost:3000/weekRankingSSListAll");
+  fetchWeekRankingSSListAll(): Observable<SS[]> {
+    return this.http.get<SS[]>('http://localhost:3000/weekRankingSSListAll');
   }
 }

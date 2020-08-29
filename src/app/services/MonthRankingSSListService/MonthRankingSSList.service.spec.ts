@@ -6,11 +6,14 @@ import { MonthRankingSSListService } from './MonthRankingSSList.service';
 describe('Service: NewSSListService', () => {
   beforeEach(() => {
     TestBed.configureTestingModule({
-      providers: [MonthRankingSSListService]
+      providers: [MonthRankingSSListService],
     });
   });
 
-  it('should ...', inject([MonthRankingSSListService], (service: MonthRankingSSListService) => {
-    expect(service).toBeTruthy();
-  }));
+  it('should ...', inject(
+    [MonthRankingSSListService],
+    (service: MonthRankingSSListService) => {
+      expect(service).toBeTruthy();
+    }
+  ));
 });

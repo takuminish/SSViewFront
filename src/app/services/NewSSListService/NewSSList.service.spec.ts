@@ -6,7 +6,7 @@ import { NewSSListService } from './NewSSList.service';
 describe('Service: NewSSListService', () => {
   beforeEach(() => {
     TestBed.configureTestingModule({
-      providers: [NewSSListService]
+      providers: [NewSSListService],
     });
   });
 

@@ -11,9 +11,8 @@ describe('SSCardComponent', () => {
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ SSCardComponent ]
-    })
-    .compileComponents();
+      declarations: [SSCardComponent],
+    }).compileComponents();
   }));
 
   beforeEach(() => {

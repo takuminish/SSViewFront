@@ -11,9 +11,8 @@ describe('SSListPageComponent', () => {
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ SSListPageComponent ]
-    })
-    .compileComponents();
+      declarations: [SSListPageComponent],
+    }).compileComponents();
   }));
 
   beforeEach(() => {

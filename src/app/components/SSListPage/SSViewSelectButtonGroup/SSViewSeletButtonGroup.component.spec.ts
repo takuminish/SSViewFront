@@ -11,9 +11,8 @@ describe('SSViewSelectButtonGroupComponent', () => {
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ SSViewSelectButtonGroupComponent ]
-    })
-    .compileComponents();
+      declarations: [SSViewSelectButtonGroupComponent],
+    }).compileComponents();
   }));
 
   beforeEach(() => {

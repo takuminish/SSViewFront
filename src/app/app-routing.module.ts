@@ -4,15 +4,14 @@ import { SSListPageComponent } from './components/SSListPage/SSListPage/SSListPa
 import { SSViewPageComponent } from './components/SSViewPage/SSViewPage/SSViewPage.component';
 import { TagListPageComponent } from './components/TagListPage/TagListPage/TagListPage.component';
 
-
 const routes: Routes = [
-  {path: '', component: SSListPageComponent},
-  {path: 'ss/:id', component: SSViewPageComponent},
-  {path: 'tag', component: TagListPageComponent},
+  { path: '', component: SSListPageComponent },
+  { path: 'ss/:id', component: SSViewPageComponent },
+  { path: 'tag', component: TagListPageComponent },
 ];
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
-  exports: [RouterModule]
+  exports: [RouterModule],
 })
-export class AppRoutingModule { }
+export class AppRoutingModule {}

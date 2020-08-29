@@ -11,9 +11,8 @@ describe('TagListPageComponent', () => {
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ TagListPageComponent ]
-    })
-    .compileComponents();
+      declarations: [TagListPageComponent],
+    }).compileComponents();
   }));
 
   beforeEach(() => {
