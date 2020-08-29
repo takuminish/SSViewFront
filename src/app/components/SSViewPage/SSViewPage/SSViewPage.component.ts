@@ -8,7 +8,7 @@ import { SS } from 'src/app/models/SS.model';
 })
 export class SSViewPageComponent implements OnInit {
 
-  public ss:SS = {
+  public ss: SS = {
     id: 1,
     title: 'SSタイトル',
     content: 'テスト本文です。テスト本文です。テスト本文です。テスト本文です。テスト本文です。テスト本文です。',
