@@ -26,7 +26,7 @@ export class SSViewPageComponent implements OnInit {
     createdAt: new Date(),
   };
 
-  constructor() {}
+  constructor() { }
 
-  ngOnInit() {}
+  ngOnInit() { }
 }
